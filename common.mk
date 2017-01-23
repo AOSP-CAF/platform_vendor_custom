@@ -154,9 +154,9 @@ endif
 # by default, do not update the recovery with system updates
 PRODUCT_PROPERTY_OVERRIDES += persist.sys.recovery_update=false
 
-ifneq ($(TARGET_BUILD_VARIANT),eng)
+#ifneq ($(TARGET_BUILD_VARIANT),eng)
 # Enable ADB authentication
-ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=1
-endif
+#ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=1
+#endif
 
 $(call inherit-product-if-exists, vendor/extra/product.mk)
