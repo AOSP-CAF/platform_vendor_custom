@@ -39,7 +39,7 @@ PRODUCT_COPY_FILES += \
 
 # Init file
 PRODUCT_COPY_FILES += \
-    vendor/custom/prebuilt/common/etc/init.local.rc:root/init.local.rc
+    vendor/custom/prebuilt/common/etc/init/init.local.rc:system/etc/init/init.local.rc
 
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
